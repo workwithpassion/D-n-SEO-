@@ -1,92 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Các lỗi thường gặp trong Excel và cách khắc phục mới nhất 2024</title>
-    <meta name="description" content="Tổng hợp các lỗi thường gặp trong Excel như #VALUE!, #REF!, #NAME?, #DIV/0! và hướng dẫn cách khắc phục chi tiết, dễ hiểu nhất cho người mới bắt đầu.">
-    <link rel="canonical" href="https://yourdomain.com/">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Các lỗi thường gặp trong Excel và cách khắc phục mới nhất 2024
+    </title>
+    <meta
+      name="description"
+      content="Tổng hợp các lỗi thường gặp trong Excel như #VALUE!, #REF!, #NAME?, #DIV/0! và hướng dẫn cách khắc phục chi tiết, dễ hiểu nhất cho người mới bắt đầu."
+    />
+    <link rel="canonical" href="https://yourdomain.com/" />
+
     <!-- Open Graph -->
-    <meta property="og:title" content="Các lỗi thường gặp trong Excel và cách khắc phục 2024">
-    <meta property="og:description" content="Hướng dẫn chi tiết từ A-Z cách sửa các lỗi phổ biến nhất khi sử dụng Microsoft Excel.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com/">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <meta name="google-site-verification" content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw" />
-    <link rel="stylesheet" href="/style.css">
-    
+    <meta
+      property="og:title"
+      content="Các lỗi thường gặp trong Excel và cách khắc phục 2024"
+    />
+    <meta
+      property="og:description"
+      content="Hướng dẫn chi tiết từ A-Z cách sửa các lỗi phổ biến nhất khi sử dụng Microsoft Excel."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="google-site-verification"
+      content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
     <!-- Schema Markup -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Excel Fixer",
-      "url": "https://yourdomain.com/"
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Excel Fixer",
+        "url": "https://yourdomain.com/"
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="nav-container">
-            <a href="/" class="logo" style="color: inherit; text-decoration: none;">Excel Fixer</a>
-        </div>
+      <div class="nav-container">
+        <a href="/" class="logo" style="color: inherit; text-decoration: none"
+          >Excel Fixer</a
+        >
+      </div>
     </header>
 
     <main>
-        <div class="hero">
-            <h1>Các Lỗi Thường Gặp Trong Excel và Cách Khắc Phục</h1>
-            <p>Giải pháp toàn diện giúp bạn xử lý mọi thông báo báo lỗi khó chịu trên Excel chỉ trong 3 phút.</p>
+      <div class="hero">
+        <h1>Các Lỗi Thường Gặp Trong Excel và Cách Khắc Phục</h1>
+        <p>
+          Giải pháp toàn diện giúp bạn xử lý mọi thông báo báo lỗi khó chịu trên
+          Excel chỉ trong 3 phút.
+        </p>
+      </div>
+
+      <article>
+        <h2>Tại sao file Excel của bạn báo lỗi?</h2>
+        <p>
+          Trong quá trình làm việc với Microsoft Excel, việc gặp phải các thông
+          báo lỗi như <code>#VALUE!</code>, <code>#REF!</code>, hoặc
+          <code>#NAME?</code> là vô cùng phổ biến. Những vấn đề này thường xuất
+          hiện do gõ sai công thức, tham chiếu đến các ô bị xóa, hoặc lỗi định
+          dạng dữ liệu.
+        </p>
+        <p>
+          May mắn thay, hầu hết các lỗi này đều có thể khắc phục được một cách
+          nhanh chóng nếu bạn hiểu được cốt lõi vấn đề. Dưới đây là danh sách
+          tổng hợp giải pháp chi tiết cho từng loại lỗi.
+        </p>
+
+        <h2>Danh sách các bài viết hướng dẫn khắc phục</h2>
+        <ul class="article-list">
+          <li>
+            <h3>
+              <a href="/articles/loi-value-trong-excel/"
+                >1. Cách sửa lỗi #VALUE! trong Excel</a
+              >
+            </h3>
+            <p>
+              Lỗi xảy ra khi bạn thực hiện phép tính toán học với dữ liệu text.
+              Xem ngay bí quyết chuyển đổi dữ liệu và khắc phục nhanh chóng.
+            </p>
+          </li>
+          <li>
+            <h3>
+              <a href="/articles/loi-ref-trong-excel/"
+                >2. Cách khắc phục lỗi #REF! cực chuẩn</a
+              >
+            </h3>
+            <p>
+              Lỗi tồi tệ nhất khi một ô tham chiếu bị xóa. Hướng dẫn cách khôi
+              phục và tránh việc mất liên kết dữ liệu.
+            </p>
+          </li>
+          <li>
+            <h3>
+              <a href="/articles/loi-name-trong-excel/"
+                >3. Lỗi #NAME? trong Excel là gì?</a
+              >
+            </h3>
+            <p>
+              Nguyên nhân chủ yếu do gõ sai tên hàm hoặc lỗi đánh máy công thức.
+              Xem mẹo kiểm tra cực hay.
+            </p>
+          </li>
+          <li>
+            <h3>
+              <a href="/articles/loi-div-0-trong-excel/"
+                >4. Hướng dẫn sửa lỗi #DIV/0! đơn giản</a
+              >
+            </h3>
+            <p>
+              Lỗi chia cho 0 xảy ra khi mẫu số trống. Tìm hiểu cách dùng hàm
+              IFERROR để xử lý gọn gàng.
+            </p>
+          </li>
+          <li>
+            <h3>
+              <a href="/articles/file-excel-bi-cham/"
+                >5. Cách sửa file Excel bị nặng, xử lý chậm</a
+              >
+            </h3>
+            <p>
+              Tối ưu hóa file tính toán cồng kềnh, giảm dung lượng thừa, và tăng
+              tốc độ xử lý khi làm việc với dữ liệu lớn.
+            </p>
+          </li>
+        </ul>
+
+        <div class="faq-section">
+          <h2>Câu hỏi thường gặp (FAQ)</h2>
+          <div class="faq-item">
+            <h3>Lỗi phổ biến nhất trong Excel là gì?</h3>
+            <p>
+              Theo thống kê, <code>#VALUE!</code> và <code>#REF!</code> là hai
+              lỗi phổ biến nhất. Lỗi #VALUE! thường do nhập liệu sai định dạng
+              (ví dụ cộng một số với một chữ), trong khi #REF! do vô tình xóa
+              mất cột hoặc hàng đang được tham chiếu tới.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Làm sao để ẩn các thông báo lỗi khi in?</h3>
+            <p>
+              Bạn có thể sử dụng hàm <code>IFERROR()</code> để bao bọc ngoài
+              công thức. Nếu có lỗi, hàm sẽ trả về khoảng trắng hoặc số 0 thay
+              vì hiện các ký tự báo lỗi xấu xí.
+            </p>
+          </div>
         </div>
-
-        <article>
-            <h2>Tại sao file Excel của bạn báo lỗi?</h2>
-            <p>Trong quá trình làm việc với Microsoft Excel, việc gặp phải các thông báo lỗi như <code>#VALUE!</code>, <code>#REF!</code>, hoặc <code>#NAME?</code> là vô cùng phổ biến. Những vấn đề này thường xuất hiện do gõ sai công thức, tham chiếu đến các ô bị xóa, hoặc lỗi định dạng dữ liệu.</p>
-            <p>May mắn thay, hầu hết các lỗi này đều có thể khắc phục được một cách nhanh chóng nếu bạn hiểu được cốt lõi vấn đề. Dưới đây là danh sách tổng hợp giải pháp chi tiết cho từng loại lỗi.</p>
-
-            <h2>Danh sách các bài viết hướng dẫn khắc phục</h2>
-            <ul class="article-list">
-                <li>
-                    <h3><a href="/articles/loi-value-trong-excel/">1. Cách sửa lỗi #VALUE! trong Excel</a></h3>
-                    <p>Lỗi xảy ra khi bạn thực hiện phép tính toán học với dữ liệu text. Xem ngay bí quyết chuyển đổi dữ liệu và khắc phục nhanh chóng.</p>
-                </li>
-                <li>
-                    <h3><a href="/articles/loi-ref-trong-excel/">2. Cách khắc phục lỗi #REF! cực chuẩn</a></h3>
-                    <p>Lỗi tồi tệ nhất khi một ô tham chiếu bị xóa. Hướng dẫn cách khôi phục và tránh việc mất liên kết dữ liệu.</p>
-                </li>
-                <li>
-                    <h3><a href="/articles/loi-name-trong-excel/">3. Lỗi #NAME? trong Excel là gì?</a></h3>
-                    <p>Nguyên nhân chủ yếu do gõ sai tên hàm hoặc lỗi đánh máy công thức. Xem mẹo kiểm tra cực hay.</p>
-                </li>
-                <li>
-                    <h3><a href="/articles/loi-div-0-trong-excel/">4. Hướng dẫn sửa lỗi #DIV/0! đơn giản</a></h3>
-                    <p>Lỗi chia cho 0 xảy ra khi mẫu số trống. Tìm hiểu cách dùng hàm IFERROR để xử lý gọn gàng.</p>
-                </li>
-                <li>
-                    <h3><a href="/articles/file-excel-bi-cham/">5. Cách sửa file Excel bị nặng, xử lý chậm</a></h3>
-                    <p>Tối ưu hóa file tính toán cồng kềnh, giảm dung lượng thừa, và tăng tốc độ xử lý khi làm việc với dữ liệu lớn.</p>
-                </li>
-            </ul>
-
-            <div class="faq-section">
-                <h2>Câu hỏi thường gặp (FAQ)</h2>
-                <div class="faq-item">
-                    <h3>Lỗi phổ biến nhất trong Excel là gì?</h3>
-                    <p>Theo thống kê, <code>#VALUE!</code> và <code>#REF!</code> là hai lỗi phổ biến nhất. Lỗi #VALUE! thường do nhập liệu sai định dạng (ví dụ cộng một số với một chữ), trong khi #REF! do vô tình xóa mất cột hoặc hàng đang được tham chiếu tới.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Làm sao để ẩn các thông báo lỗi khi in?</h3>
-                    <p>Bạn có thể sử dụng hàm <code>IFERROR()</code> để bao bọc ngoài công thức. Nếu có lỗi, hàm sẽ trả về khoảng trắng hoặc số 0 thay vì hiện các ký tự báo lỗi xấu xí.</p>
-                </div>
-            </div>
-        </article>
+      </article>
     </main>
 
     <footer>
-        <p>&copy; 2024 Excel Fixer. Nơi cung cấp giải pháp Excel hàng đầu.</p>
+      <p>&copy; 2024 Excel Fixer. Nơi cung cấp giải pháp Excel hàng đầu.</p>
     </footer>
-</body>
+  </body>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-7FL2LR414G"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-7FL2LR414G");
+  </script>
 </html>

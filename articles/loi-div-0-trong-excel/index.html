@@ -1,52 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sửa lỗi DIV/0 trong Excel gọn lẹ - Hướng dẫn 2024</title>
-    <meta name="description" content="Bạn cần sửa lỗi DIV/0 trong Excel? Xem ngay hướng dẫn cách xử lý lỗi chia cho 0 bằng hàm IFERROR cực kỳ nhanh chóng và chuyên nghiệp.">
-    <link rel="canonical" href="https://yourdomain.com/articles/loi-div-0-trong-excel.html">
-    <link rel="stylesheet" href="/style.css">
-    <meta name="google-site-verification" content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw" />
-</head>
-<body>
+    <meta
+      name="description"
+      content="Bạn cần sửa lỗi DIV/0 trong Excel? Xem ngay hướng dẫn cách xử lý lỗi chia cho 0 bằng hàm IFERROR cực kỳ nhanh chóng và chuyên nghiệp."
+    />
+    <link
+      rel="canonical"
+      href="https://yourdomain.com/articles/loi-div-0-trong-excel.html"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <meta
+      name="google-site-verification"
+      content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw"
+    />
+  </head>
+  <body>
     <header>
-        <div class="nav-container">
-            <a href="/" class="logo">Excel Fixer</a>
-        </div>
+      <div class="nav-container">
+        <a href="/" class="logo">Excel Fixer</a>
+      </div>
     </header>
 
     <main>
-        <article>
-            <div class="breadcrumb">
-                <a href="/">Trang chủ</a> > Lỗi #DIV/0!
-            </div>
+      <article>
+        <div class="breadcrumb"><a href="/">Trang chủ</a> > Lỗi #DIV/0!</div>
 
-            <h1>Cách Sửa Lỗi #DIV/0! Trong Excel Đơn Giản Nhất Và Hiện Trống</h1>
-            
-            <p>Bảng thống kê KPIs cuối tháng thường có hàng loạt thông báo <code>#DIV/0!</code> khó chịu. Và ngay tại đây, bạn sẽ biết được <strong>sửa lỗi div/0 trong excel</strong> dễ dàng hơn bạn nghĩ rất nhiều.</p>
+        <h1>Cách Sửa Lỗi #DIV/0! Trong Excel Đơn Giản Nhất Và Hiện Trống</h1>
 
-            <h2>Bản chất lỗi #DIV/0! là gì?</h2>
-            <p>Về cốt lõi cấu trúc toán học cơ bản toàn cầu, <strong>bạn không thể chia bất kỳ số nào cho Số 0</strong>. Vì thế khi Excel được nạp vào một phép tính mà Mẫu số của phân số (Denominator) có giá trị bằng 0 (hoặc là 1 ô bỏ trống, cell blank), thuật toán an toàn sẽ lập tức ngắt bỏ và giương cờ lỗi #DIV/0! (divide by zero).</p>
+        <p>
+          Bảng thống kê KPIs cuối tháng thường có hàng loạt thông báo
+          <code>#DIV/0!</code> khó chịu. Và ngay tại đây, bạn sẽ biết được
+          <strong>sửa lỗi div/0 trong excel</strong> dễ dàng hơn bạn nghĩ rất
+          nhiều.
+        </p>
 
-            <h2>Biện pháp khắc phục chuyên nghiệp nhất</h2>
-            
-            <h3>Bí kíp 1: Kiểm tra lại toàn bộ dữ liệu điền vào</h3>
-            <p>Trước tiên, để chắc chắn không phải do sai sót số liệu: 1 Cell nào đó vô tình bị người tạo quên điền số, tạo thành lỗ hổng khiến giá trị tham chiếu bằng 0. Hoặc ai đó gõ chữ "Không" (chữ cái chuyển số bằng 0). Phải check lại <a href="/articles/loi-value-trong-excel.html">lỗi giá trị (Value)</a> bằng bộ lọc cẩn thận.</p>
+        <h2>Bản chất lỗi #DIV/0! là gì?</h2>
+        <p>
+          Về cốt lõi cấu trúc toán học cơ bản toàn cầu,
+          <strong>bạn không thể chia bất kỳ số nào cho Số 0</strong>. Vì thế khi
+          Excel được nạp vào một phép tính mà Mẫu số của phân số (Denominator)
+          có giá trị bằng 0 (hoặc là 1 ô bỏ trống, cell blank), thuật toán an
+          toàn sẽ lập tức ngắt bỏ và giương cờ lỗi #DIV/0! (divide by zero).
+        </p>
 
-            <h3>Bí kíp 2: Ẩn lỗi bằng hàm ma thuật IFERROR</h3>
-            <p>Chúng ta có dữ liệu bảng kế hoạch. Khối lượng chưa có nhưng vẫn phải cài sẵn công thức chia. Cách để giao diện tinh tế:</p>
-            <pre><code>Lỗi chưa xử lý: = B2/C2
+        <h2>Biện pháp khắc phục chuyên nghiệp nhất</h2>
+
+        <h3>Bí kíp 1: Kiểm tra lại toàn bộ dữ liệu điền vào</h3>
+        <p>
+          Trước tiên, để chắc chắn không phải do sai sót số liệu: 1 Cell nào đó
+          vô tình bị người tạo quên điền số, tạo thành lỗ hổng khiến giá trị
+          tham chiếu bằng 0. Hoặc ai đó gõ chữ "Không" (chữ cái chuyển số bằng
+          0). Phải check lại
+          <a href="/articles/loi-value-trong-excel.html">lỗi giá trị (Value)</a>
+          bằng bộ lọc cẩn thận.
+        </p>
+
+        <h3>Bí kíp 2: Ẩn lỗi bằng hàm ma thuật IFERROR</h3>
+        <p>
+          Chúng ta có dữ liệu bảng kế hoạch. Khối lượng chưa có nhưng vẫn phải
+          cài sẵn công thức chia. Cách để giao diện tinh tế:
+        </p>
+        <pre><code>Lỗi chưa xử lý: = B2/C2
 Lỗi đã xử lý: =IFERROR(B2/C2, 0)</code></pre>
-            <p>Công thức bên dưới có nghĩa: "Hãy chia B2 cho C2. Tuy nhiên, NẾU điều đó gây lỗi (ví dụ chia 0), thì tự động vứt cái lỗi đi, thay về con số 0 hoặc "Chưa có liệu" giúp tôi". Bạn có thể tuỳ biến hiện khoảng trống bằng cách dùng tham đối Text <code>""</code> báo cho Excel in ra ký tự Blank tinh khiết không tì vết.</p>
+        <p>
+          Công thức bên dưới có nghĩa: "Hãy chia B2 cho C2. Tuy nhiên, NẾU điều
+          đó gây lỗi (ví dụ chia 0), thì tự động vứt cái lỗi đi, thay về con số
+          0 hoặc "Chưa có liệu" giúp tôi". Bạn có thể tuỳ biến hiện khoảng trống
+          bằng cách dùng tham đối Text <code>""</code> báo cho Excel in ra ký tự
+          Blank tinh khiết không tì vết.
+        </p>
 
-            <h3>Khuếch đại IFERROR vào hàm AVERAGE</h3>
-            <p>Hàm IF không chỉ tốt mà sự kết hợp còn áp đảo. Khi sử dụng AVERAGE tính tổng chia cho độ dài list, thỉnh thoảng độ lớn list là 0. Bạn xài <code>=IFERROR(AVERAGE(A1:A5), "N/A")</code> để bảo vệ nó chặt chẽ nhất.</p>
-        </article>
+        <h3>Khuếch đại IFERROR vào hàm AVERAGE</h3>
+        <p>
+          Hàm IF không chỉ tốt mà sự kết hợp còn áp đảo. Khi sử dụng AVERAGE
+          tính tổng chia cho độ dài list, thỉnh thoảng độ lớn list là 0. Bạn xài
+          <code>=IFERROR(AVERAGE(A1:A5), "N/A")</code> để bảo vệ nó chặt chẽ
+          nhất.
+        </p>
+      </article>
     </main>
 
     <footer>
-        <p>&copy; 2024 Excel Fixer. Sáng tạo giá trị hiệu quả.</p>
+      <p>&copy; 2024 Excel Fixer. Sáng tạo giá trị hiệu quả.</p>
     </footer>
-</body>
+  </body>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-7FL2LR414G"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-7FL2LR414G");
+  </script>
 </html>

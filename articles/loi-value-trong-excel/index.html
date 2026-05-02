@@ -1,142 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cách sửa lỗi VALUE trong Excel đơn giản, hiệu quả nhất (Update 2024)</title>
-    <meta name="description" content="Hướng dẫn chi tiết từng bước cách khắc phục lỗi #VALUE! trong Excel. Nguyên nhân gây ra lỗi và cách phòng tránh hiệu quả bạn cần biết.">
-    <link rel="canonical" href="https://yourdomain.com/articles/loi-value-trong-excel.html">
-    
-    <meta property="og:title" content="Cách sửa lỗi VALUE trong Excel đơn giản, hiệu quả nhất">
-    <meta property="og:description" content="Hướng dẫn chi tiết từng bước cách khắc phục lỗi #VALUE! trong Excel.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://yourdomain.com/articles/loi-value-trong-excel.html">
-    
-    <link rel="stylesheet" href="/style.css">
-    <meta name="google-site-verification" content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Cách sửa lỗi VALUE trong Excel đơn giản, hiệu quả nhất (Update 2024)
+    </title>
+    <meta
+      name="description"
+      content="Hướng dẫn chi tiết từng bước cách khắc phục lỗi #VALUE! trong Excel. Nguyên nhân gây ra lỗi và cách phòng tránh hiệu quả bạn cần biết."
+    />
+    <link
+      rel="canonical"
+      href="https://yourdomain.com/articles/loi-value-trong-excel.html"
+    />
+
+    <meta
+      property="og:title"
+      content="Cách sửa lỗi VALUE trong Excel đơn giản, hiệu quả nhất"
+    />
+    <meta
+      property="og:description"
+      content="Hướng dẫn chi tiết từng bước cách khắc phục lỗi #VALUE! trong Excel."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://yourdomain.com/articles/loi-value-trong-excel.html"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+    <meta
+      name="google-site-verification"
+      content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw"
+    />
     <!-- Schema Markup cho Article -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Cách sửa lỗi #VALUE! trong Excel đơn giản nhất",
-      "description": "Hướng dẫn chi tiết từng bước cách khắc phục lỗi #VALUE! trong Excel.",
-      "author": {
-        "@type": "Person",
-        "name": "Chuyên gia Excel"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Excel Fixer"
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Cách sửa lỗi #VALUE! trong Excel đơn giản nhất",
+        "description": "Hướng dẫn chi tiết từng bước cách khắc phục lỗi #VALUE! trong Excel.",
+        "author": {
+          "@type": "Person",
+          "name": "Chuyên gia Excel"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Excel Fixer"
+        }
       }
-    }
     </script>
 
     <!-- Schema Markup cho HowTo -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Cách khắc phục lỗi VALUE trong Excel",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "name": "Bước 1: Kiểm tra kiểu dữ liệu",
-          "text": "Kiểm tra xem các ô tham gia vào công thức có chứa ký tự Text hay khoảng trắng thừa không."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Bước 2: Sử dụng hàm SUM thay vì dấu cộng",
-          "text": "Thay thế dấu + bằng hàm SUM để tự động bỏ qua Text."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Bước 3: Dùng tính năng Find & Replace",
-          "text": "Nhấn Ctrl + H để tìm và xóa các khoảng trống bất thường."
-        }
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Cách khắc phục lỗi VALUE trong Excel",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Bước 1: Kiểm tra kiểu dữ liệu",
+            "text": "Kiểm tra xem các ô tham gia vào công thức có chứa ký tự Text hay khoảng trắng thừa không."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Bước 2: Sử dụng hàm SUM thay vì dấu cộng",
+            "text": "Thay thế dấu + bằng hàm SUM để tự động bỏ qua Text."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Bước 3: Dùng tính năng Find & Replace",
+            "text": "Nhấn Ctrl + H để tìm và xóa các khoảng trống bất thường."
+          }
+        ]
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="nav-container">
-            <a href="/" class="logo">Excel Fixer</a>
-        </div>
+      <div class="nav-container">
+        <a href="/" class="logo">Excel Fixer</a>
+      </div>
     </header>
 
     <main>
-        <article>
-            <div class="breadcrumb">
-                <a href="/">Trang chủ</a> > Lỗi #VALUE!
-            </div>
+      <article>
+        <div class="breadcrumb"><a href="/">Trang chủ</a> > Lỗi #VALUE!</div>
 
-            <h1>Cách Sửa Lỗi #VALUE! Trong Excel Nhanh Chóng Vài Giây</h1>
-            
-            <p>Khi làm việc trên Excel, chắc hẳn không ít lần bạn gặp phải thông báo lỗi <strong>#VALUE!</strong>. Vấn đề này có thể làm gián đoạn tiến độ công việc và gây ra nhiều sự bực bội rắc rối. </p>
-            <p>Đừng lo lắng! Bài viết này sẽ giải thích chính xác tại sao lỗi này xảy ra và cung cấp cho bạn các cách <strong>sửa lỗi value trong excel</strong> hiệu quả nhất.</p>
+        <h1>Cách Sửa Lỗi #VALUE! Trong Excel Nhanh Chóng Vài Giây</h1>
 
-            <div class="table-of-contents">
-                <h3>Nội dung chính</h3>
-                <ul>
-                    <li><a href="#loi-value-la-gi">Lỗi #VALUE! trong Excel là gì?</a></li>
-                    <li><a href="#nguyen-nhan">Tại sao lại xuất hiện lỗi này?</a></li>
-                    <li><a href="#cach-sua">3 Cách khắc phục lỗi VALUE hiệu quả nhất</a></li>
-                    <li><a href="#loi-khuyen">Lưu ý để không bao giờ gặp lại lỗi này</a></li>
-                </ul>
-            </div>
+        <p>
+          Khi làm việc trên Excel, chắc hẳn không ít lần bạn gặp phải thông báo
+          lỗi <strong>#VALUE!</strong>. Vấn đề này có thể làm gián đoạn tiến độ
+          công việc và gây ra nhiều sự bực bội rắc rối.
+        </p>
+        <p>
+          Đừng lo lắng! Bài viết này sẽ giải thích chính xác tại sao lỗi này xảy
+          ra và cung cấp cho bạn các cách
+          <strong>sửa lỗi value trong excel</strong> hiệu quả nhất.
+        </p>
 
-            <h2 id="loi-value-la-gi">Lỗi #VALUE! trong Excel là gì?</h2>
-            <p>Lỗi <code>#VALUE!</code> đơn giản là cách Microsoft Excel thông báo rằng: <em>"Có thứ gì đó không đúng với cách nhập công thức của bạn hoặc với dữ liệu trong các ô bạn đang trỏ tới"</em>. Nó có nghĩa là Excel không thể tính toán được dựa trên giá trị mà bạn cung cấp.</p>
+        <div class="table-of-contents">
+          <h3>Nội dung chính</h3>
+          <ul>
+            <li>
+              <a href="#loi-value-la-gi">Lỗi #VALUE! trong Excel là gì?</a>
+            </li>
+            <li><a href="#nguyen-nhan">Tại sao lại xuất hiện lỗi này?</a></li>
+            <li>
+              <a href="#cach-sua">3 Cách khắc phục lỗi VALUE hiệu quả nhất</a>
+            </li>
+            <li>
+              <a href="#loi-khuyen">Lưu ý để không bao giờ gặp lại lỗi này</a>
+            </li>
+          </ul>
+        </div>
 
-            <h2 id="nguyen-nhan">Nguyên nhân phổ biến gây ra lỗi</h2>
-            <p>Có 3 nguyên nhân cốt lõi khiến bạn gặp phải vấn đề này:</p>
-            <ul>
-                <li><strong>Cộng một số với một chữ (Text):</strong> Ví dụ bạn gõ <code>= A1 + B1</code> nhưng trong ô A1 lại chứa chữ "Mười" thay vì số 10.</li>
-                <li><strong>Khoảng trắng thừa:</strong> Nhìn bằng mắt thường có vẻ là một ô trống (không chứa gì), nhưng thực chất nó lại chứa khoảng trắng (dấu cách) bị người dùng gõ nhầm.</li>
-                <li><strong>Sử dụng sai các phép toán:</strong> Dùng toán tử cộng (+), trừ (-) cho mảng dữ liệu không đồng nhất.</li>
-            </ul>
+        <h2 id="loi-value-la-gi">Lỗi #VALUE! trong Excel là gì?</h2>
+        <p>
+          Lỗi <code>#VALUE!</code> đơn giản là cách Microsoft Excel thông báo
+          rằng:
+          <em
+            >"Có thứ gì đó không đúng với cách nhập công thức của bạn hoặc với
+            dữ liệu trong các ô bạn đang trỏ tới"</em
+          >. Nó có nghĩa là Excel không thể tính toán được dựa trên giá trị mà
+          bạn cung cấp.
+        </p>
 
-            <h2 id="cach-sua">Hướng dẫn 3 bước khắc phục lỗi VALUE cực nhanh</h2>
-            
-            <h3>Cách 1: Sử dụng Hàm thay cho Toán tử (+,-,*,/)</h3>
-            <p>Thay vì sử dụng các dấu toán học cơ bản, hãy sử dụng các hàm có sẵn của Excel. Các hàm này được lập trình để thông minh bỏ qua các dữ liệu dạng Text vô tình bị dính vào tính toán. </p>
-            <p><strong>Ví dụ:</strong> Thay vì viết: <code>=A1+A2+A3</code></p>
-            <p>Bạn hãy viết:</p>
-            <pre><code>=SUM(A1:A3)</code></pre>
-            <p>Hàm <code>SUM</code> sẽ tự động bỏ qua những ô bị lỗi chữ và chỉ cộng tổng các số hợp lệ.</p>
+        <h2 id="nguyen-nhan">Nguyên nhân phổ biến gây ra lỗi</h2>
+        <p>Có 3 nguyên nhân cốt lõi khiến bạn gặp phải vấn đề này:</p>
+        <ul>
+          <li>
+            <strong>Cộng một số với một chữ (Text):</strong> Ví dụ bạn gõ
+            <code>= A1 + B1</code> nhưng trong ô A1 lại chứa chữ "Mười" thay vì
+            số 10.
+          </li>
+          <li>
+            <strong>Khoảng trắng thừa:</strong> Nhìn bằng mắt thường có vẻ là
+            một ô trống (không chứa gì), nhưng thực chất nó lại chứa khoảng
+            trắng (dấu cách) bị người dùng gõ nhầm.
+          </li>
+          <li>
+            <strong>Sử dụng sai các phép toán:</strong> Dùng toán tử cộng (+),
+            trừ (-) cho mảng dữ liệu không đồng nhất.
+          </li>
+        </ul>
 
-            <h3>Cách 2: Cảnh giác với khoảng trắng "tàng hình"</h3>
-            <p>Nhiều khi bạn nhìn thấy một ô trống, nhưng nó lại chứa Spacebar. Để khắc phục nhanh:</p>
-            <ol>
-                <li>Bôi đen cột dữ liệu bạn đang nghi ngờ.</li>
-                <li>Nhấn tổ hợp phím <code>Ctrl + H</code> (Mở hộp thoại Tìm kiếm & Thay thế).</li>
-                <li>Ở ô <strong>Find What</strong>, gõ 1 dấu cách (Space).</li>
-                <li>Ở ô <strong>Replace With</strong>, để trống hoàn toàn.</li>
-                <li>Bấm <strong>Replace All</strong>.</li>
-            </ol>
-            <p>Điều này sẽ làm sạch tất cả những rác dữ liệu còn tồn đọng.</p>
+        <h2 id="cach-sua">Hướng dẫn 3 bước khắc phục lỗi VALUE cực nhanh</h2>
 
-            <h3>Cách 3: Sử dụng IFERROR để "ẩn" lỗi</h3>
-            <p>Nếu bạn biết chắc chắn dữ liệu của mình không hoàn hảo, nhưng vẫn muốn bảng tính hiển thị đẹp mắt và không thông báo lỗi <code>#VALUE!</code>, hãy dùng cấu trúc <code>IFERROR()</code>.</p>
-            <pre><code>=IFERROR(A1+B1, 0)</code></pre>
-            <p>Công thức này có nghĩa là "Nếu A1+B1 bị lỗi, hãy điền số 0 thay vì hiện thông báo #VALUE!".</p>
+        <h3>Cách 1: Sử dụng Hàm thay cho Toán tử (+,-,*,/)</h3>
+        <p>
+          Thay vì sử dụng các dấu toán học cơ bản, hãy sử dụng các hàm có sẵn
+          của Excel. Các hàm này được lập trình để thông minh bỏ qua các dữ liệu
+          dạng Text vô tình bị dính vào tính toán.
+        </p>
+        <p><strong>Ví dụ:</strong> Thay vì viết: <code>=A1+A2+A3</code></p>
+        <p>Bạn hãy viết:</p>
+        <pre><code>=SUM(A1:A3)</code></pre>
+        <p>
+          Hàm <code>SUM</code> sẽ tự động bỏ qua những ô bị lỗi chữ và chỉ cộng
+          tổng các số hợp lệ.
+        </p>
 
-            <h2 id="loi-khuyen">Mẹo nhỏ phòng tránh lỗi</h2>
-            <p>Để tối ưu công việc của mình và ít cần phải tìm hiểu <a href="/">các lỗi thường gặp trong Excel</a> hơn, luôn nhớ rằng: <strong>Hãy định dạng format cho cột trước khi nhập liệu</strong>. Nếu là số tiền, set format sang số; nếu là tên, set format là Text.</p>
-            
-            <div class="related-articles">
-                <h3>Có thể bạn quan tâm:</h3>
-                <ul>
-                    <li><a href="/articles/loi-name-trong-excel.html">Sửa lỗi #NAME? do đánh máy sai tên hàm</a></li>
-                    <li><a href="/articles/loi-div-0-trong-excel.html">Khắc phục lỗi #DIV/0! khi thực hiện chia</a></li>
-                </ul>
-            </div>
-        </article>
+        <h3>Cách 2: Cảnh giác với khoảng trắng "tàng hình"</h3>
+        <p>
+          Nhiều khi bạn nhìn thấy một ô trống, nhưng nó lại chứa Spacebar. Để
+          khắc phục nhanh:
+        </p>
+        <ol>
+          <li>Bôi đen cột dữ liệu bạn đang nghi ngờ.</li>
+          <li>
+            Nhấn tổ hợp phím <code>Ctrl + H</code> (Mở hộp thoại Tìm kiếm & Thay
+            thế).
+          </li>
+          <li>Ở ô <strong>Find What</strong>, gõ 1 dấu cách (Space).</li>
+          <li>Ở ô <strong>Replace With</strong>, để trống hoàn toàn.</li>
+          <li>Bấm <strong>Replace All</strong>.</li>
+        </ol>
+        <p>Điều này sẽ làm sạch tất cả những rác dữ liệu còn tồn đọng.</p>
+
+        <h3>Cách 3: Sử dụng IFERROR để "ẩn" lỗi</h3>
+        <p>
+          Nếu bạn biết chắc chắn dữ liệu của mình không hoàn hảo, nhưng vẫn muốn
+          bảng tính hiển thị đẹp mắt và không thông báo lỗi
+          <code>#VALUE!</code>, hãy dùng cấu trúc <code>IFERROR()</code>.
+        </p>
+        <pre><code>=IFERROR(A1+B1, 0)</code></pre>
+        <p>
+          Công thức này có nghĩa là "Nếu A1+B1 bị lỗi, hãy điền số 0 thay vì
+          hiện thông báo #VALUE!".
+        </p>
+
+        <h2 id="loi-khuyen">Mẹo nhỏ phòng tránh lỗi</h2>
+        <p>
+          Để tối ưu công việc của mình và ít cần phải tìm hiểu
+          <a href="/">các lỗi thường gặp trong Excel</a> hơn, luôn nhớ rằng:
+          <strong>Hãy định dạng format cho cột trước khi nhập liệu</strong>. Nếu
+          là số tiền, set format sang số; nếu là tên, set format là Text.
+        </p>
+
+        <div class="related-articles">
+          <h3>Có thể bạn quan tâm:</h3>
+          <ul>
+            <li>
+              <a href="/articles/loi-name-trong-excel.html"
+                >Sửa lỗi #NAME? do đánh máy sai tên hàm</a
+              >
+            </li>
+            <li>
+              <a href="/articles/loi-div-0-trong-excel.html"
+                >Khắc phục lỗi #DIV/0! khi thực hiện chia</a
+              >
+            </li>
+          </ul>
+        </div>
+      </article>
     </main>
 
     <footer>
-        <p>&copy; 2024 Excel Fixer. <a href="/">Về Trang Chủ</a></p>
+      <p>&copy; 2024 Excel Fixer. <a href="/">Về Trang Chủ</a></p>
     </footer>
-</body>
+  </body>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-7FL2LR414G"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-7FL2LR414G");
+  </script>
 </html>

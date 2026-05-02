@@ -1,77 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lỗi NAME trong Excel là gì? Hướng dẫn cách sửa cực kỳ dễ hiểu</title>
-    <meta name="description" content="Bạn đang gặp thông báo lỗi #NAME? trong Excel? Khám phá 4 nguyên nhân chính gây ra lỗi này và cách khắc phục chúng ngay lập tức chỉ với vài cú click chuột.">
-    <link rel="canonical" href="https://yourdomain.com/articles/loi-name-trong-excel.html">
-    <link rel="stylesheet" href="/style.css">
-    <meta name="google-site-verification" content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw" />
+    <meta
+      name="description"
+      content="Bạn đang gặp thông báo lỗi #NAME? trong Excel? Khám phá 4 nguyên nhân chính gây ra lỗi này và cách khắc phục chúng ngay lập tức chỉ với vài cú click chuột."
+    />
+    <link
+      rel="canonical"
+      href="https://yourdomain.com/articles/loi-name-trong-excel.html"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <meta
+      name="google-site-verification"
+      content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw"
+    />
     <!-- Schema Markup cho FAQ -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Lỗi NAME trong Excel là gì?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Lỗi #NAME? xuất hiện khi bạn gõ sai cú pháp tên hàm (ví dụ gõ =SUMM thay vì =SUM) hoặc tham chiếu sai Text mà không có dấu ngoặc kép."
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Lỗi NAME trong Excel là gì?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lỗi #NAME? xuất hiện khi bạn gõ sai cú pháp tên hàm (ví dụ gõ =SUMM thay vì =SUM) hoặc tham chiếu sai Text mà không có dấu ngoặc kép."
+            }
           }
-        }
-      ]
-    }
+        ]
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="nav-container">
-            <a href="/" class="logo">Excel Fixer</a>
-        </div>
+      <div class="nav-container">
+        <a href="/" class="logo">Excel Fixer</a>
+      </div>
     </header>
 
     <main>
-        <article>
-            <div class="breadcrumb">
-                <a href="/">Trang chủ</a> > Lỗi #NAME?
-            </div>
+      <article>
+        <div class="breadcrumb"><a href="/">Trang chủ</a> > Lỗi #NAME?</div>
 
-            <h1>Lỗi #NAME? Trong Excel Là Gì Và Cách Sửa Đơn Giản Cho Mọi Người</h1>
-            
-            <p>Chắc hẳn ai cũng từng gặp sự cố khó chịu khi một dòng giá trị #NAME? chình ình ngay giữa bảng tính đang trình báo cáo. Nếu bạn đang tự hỏi <strong>lỗi name trong excel là gì</strong>, thì bạn đã lọt vào đúng bài viết hướng dẫn này.</p>
+        <h1>Lỗi #NAME? Trong Excel Là Gì Và Cách Sửa Đơn Giản Cho Mọi Người</h1>
 
-            <h2>Giải mã thông báo lỗi #NAME?</h2>
-            <p>Bất cứ khi nào Excel không thể nhận diện được các text văn bản có trong công thức học hàm của bạn, nó sẽ thét lên cụm từ <code>#NAME?</code>. Nó có hàm ý: <em>"Này, cái tên hàm/tên vùng này tôi không biết cơ sở dữ liệu nó nằm ở đâu cả!"</em>.</p>
+        <p>
+          Chắc hẳn ai cũng từng gặp sự cố khó chịu khi một dòng giá trị #NAME?
+          chình ình ngay giữa bảng tính đang trình báo cáo. Nếu bạn đang tự hỏi
+          <strong>lỗi name trong excel là gì</strong>, thì bạn đã lọt vào đúng
+          bài viết hướng dẫn này.
+        </p>
 
-            <h2>3 Nguyên nhân chính và hướng khắc phục</h2>
+        <h2>Giải mã thông báo lỗi #NAME?</h2>
+        <p>
+          Bất cứ khi nào Excel không thể nhận diện được các text văn bản có
+          trong công thức học hàm của bạn, nó sẽ thét lên cụm từ
+          <code>#NAME?</code>. Nó có hàm ý:
+          <em
+            >"Này, cái tên hàm/tên vùng này tôi không biết cơ sở dữ liệu nó nằm
+            ở đâu cả!"</em
+          >.
+        </p>
 
-            <h3>1. Bạn vô tình gõ sai (Typo) tên hàm gốc</h3>
-            <p>Chỉ cần 1 ký tự sai, Excel sẽ đóng băng. Thay vì dùng <code>=SUM(A1:A5)</code>, do vội vàng bạn lại gõ: <code>=SUMM(A1:A5)</code> hoặc là <code>=VLOOKP(...)</code>.</p>
-            <p><strong>Cách xử lý:</strong> Hãy sử dụng tính năng gọi tên tự động của Formula Formula. Mỗi khi bạn bắt đầu gõ dấu <code>=</code> và 1 chữ cái mở đầu, Excel cung cấp 1 bảng dropdown cho bạn các hàm hợp lệ hiện hữu. Dùng phím Tab để chọn thay vì gõ tay toàn bộ.</p>
+        <h2>3 Nguyên nhân chính và hướng khắc phục</h2>
 
-            <h3>2. Text dạng văn bản thiếu dấu ngoặc kép</h3>
-            <p>Excel xử lý rất công bằng: Nếu là TEXT, nó phản phải được bọc trong cặp double-quotes (ngoặc kép). Nếu đánh quên thì Excel sẽ tưởng đó là 1 biến hoặc tên hàm.</p>
-            <pre><code>Công thức gây ra #NAME?: =IF(A1=Đúng, "Duyệt", "Không Duyệt")</code></pre>
-            <pre><code>Công thức chuẩn đúng: =IF(A1="Đúng", "Duyệt", "Không Duyệt")</code></pre>
-            <p><strong>Cách xử lý:</strong> Quan sát kĩ và đóng ngoặc kép cẩn thận. Bất kỳ giá trị nào không phải tham chiếu Cell hoặc là HÀM thì đều phải được cô lập.</p>
+        <h3>1. Bạn vô tình gõ sai (Typo) tên hàm gốc</h3>
+        <p>
+          Chỉ cần 1 ký tự sai, Excel sẽ đóng băng. Thay vì dùng
+          <code>=SUM(A1:A5)</code>, do vội vàng bạn lại gõ:
+          <code>=SUMM(A1:A5)</code> hoặc là <code>=VLOOKP(...)</code>.
+        </p>
+        <p>
+          <strong>Cách xử lý:</strong> Hãy sử dụng tính năng gọi tên tự động của
+          Formula Formula. Mỗi khi bạn bắt đầu gõ dấu <code>=</code> và 1 chữ
+          cái mở đầu, Excel cung cấp 1 bảng dropdown cho bạn các hàm hợp lệ hiện
+          hữu. Dùng phím Tab để chọn thay vì gõ tay toàn bộ.
+        </p>
 
-            <h3>3. Phạm vi tham chiếu mảng thiếu dấu chấm phím</h3>
-            <p>Đây là sai lầm newbie 101. Bạn muốn chạy SUM từ ô A1 cho tới ô A20. Bạn gõ công thức nhanh và sai: <code>=SUM(A1A20)</code>. Vì thiếu dấu `:` nối giữa, thuật toán báo lỗi.</p>
-            <p>Dấu `:` là cây cầu tuyệt vời để chắp nối 2 Cell Reference và lấy mọi thông số bên trong phạm vi. Đừng tiết kiệm dấu chấm phím này.</p>
+        <h3>2. Text dạng văn bản thiếu dấu ngoặc kép</h3>
+        <p>
+          Excel xử lý rất công bằng: Nếu là TEXT, nó phản phải được bọc trong
+          cặp double-quotes (ngoặc kép). Nếu đánh quên thì Excel sẽ tưởng đó là
+          1 biến hoặc tên hàm.
+        </p>
+        <pre><code>Công thức gây ra #NAME?: =IF(A1=Đúng, "Duyệt", "Không Duyệt")</code></pre>
+        <pre><code>Công thức chuẩn đúng: =IF(A1="Đúng", "Duyệt", "Không Duyệt")</code></pre>
+        <p>
+          <strong>Cách xử lý:</strong> Quan sát kĩ và đóng ngoặc kép cẩn thận.
+          Bất kỳ giá trị nào không phải tham chiếu Cell hoặc là HÀM thì đều phải
+          được cô lập.
+        </p>
 
-            <div class="faq-section">
-                <h2>Cảnh báo những sai lầm hay mắc</h2>
-                <p>Nhiều người thường khắc phục bằng cách bỏ qua cảnh báo hoặc bao hàm bằng <code>IFERROR()</code>. Điều này cực kì tồi tệ cho lỗi Name, bởi bạn đang giấu đi một lỗ hổng trong công thức. Khác với <code><a href="/articles/loi-div-0-trong-excel.html">lỗi chia cho không</a></code>, bạn phải fix lỗi NAME triệt để.</p>
-            </div>
-            
-        </article>
+        <h3>3. Phạm vi tham chiếu mảng thiếu dấu chấm phím</h3>
+        <p>
+          Đây là sai lầm newbie 101. Bạn muốn chạy SUM từ ô A1 cho tới ô A20.
+          Bạn gõ công thức nhanh và sai: <code>=SUM(A1A20)</code>. Vì thiếu dấu
+          `:` nối giữa, thuật toán báo lỗi.
+        </p>
+        <p>
+          Dấu `:` là cây cầu tuyệt vời để chắp nối 2 Cell Reference và lấy mọi
+          thông số bên trong phạm vi. Đừng tiết kiệm dấu chấm phím này.
+        </p>
+
+        <div class="faq-section">
+          <h2>Cảnh báo những sai lầm hay mắc</h2>
+          <p>
+            Nhiều người thường khắc phục bằng cách bỏ qua cảnh báo hoặc bao hàm
+            bằng <code>IFERROR()</code>. Điều này cực kì tồi tệ cho lỗi Name,
+            bởi bạn đang giấu đi một lỗ hổng trong công thức. Khác với
+            <code
+              ><a href="/articles/loi-div-0-trong-excel.html"
+                >lỗi chia cho không</a
+              ></code
+            >, bạn phải fix lỗi NAME triệt để.
+          </p>
+        </div>
+      </article>
     </main>
 
     <footer>
-        <p>&copy; 2024 Excel Fixer. Xóa bỏ rắc rối với spreadsheet.</p>
+      <p>&copy; 2024 Excel Fixer. Xóa bỏ rắc rối với spreadsheet.</p>
     </footer>
-</body>
+  </body>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-7FL2LR414G"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-7FL2LR414G");
+  </script>
 </html>
