@@ -9,6 +9,17 @@
   3. *lỗi name trong excel là gì* (loi-name-trong-excel.html)
   4. *sửa lỗi div/0 trong excel* (loi-div-0-trong-excel.html)
   5. *file excel bị nặng xử lý chậm* (file-excel-bi-cham.html)
+  6. *lỗi n/a trong excel* (loi-na-trong-excel.html)
+  7. *lỗi num trong excel* (loi-num-trong-excel.html)
+  8. *excel hiện ###* (loi-hash-trong-excel.html)
+  9. *không kéo được công thức trong excel* (khong-keo-duoc-cong-thuc-trong-excel.html)
+  10. *excel không tự cập nhật công thức* (excel-khong-tu-cap-nhat-cong-thuc.html)
+  11. *không mở được file excel* (khong-mo-duoc-file-excel.html)
+  12. *lỗi font chữ excel bị vỡ* (loi-font-chu-excel.html)
+  13. *copy paste trong excel bị lỗi* (copy-paste-trong-excel-bi-loi.html)
+  14. *không gõ được công thức trong excel* (khong-go-duoc-cong-thuc-trong-excel.html)
+  15. *excel hiển thị công thức thay vì kết quả* (excel-hien-thi-cong-thuc-thay-vi-ket-qua.html)
+  16. *cách tối ưu file excel bị nặng* (toi-uu-file-excel-nang.html)
 
 Tất cả các bài viết đều nhắm mục tiêu vào Search Intent rõ ràng: Khắc phục sự cố (Troubleshooting & How-to).
 
@@ -26,7 +37,18 @@ Mã nguồn đã được tạo đáp ứng chuẩn cấu trúc:
     ├── loi-ref-trong-excel.html
     ├── loi-name-trong-excel.html
     ├── loi-div-0-trong-excel.html
-    └── file-excel-bi-cham.html
+    ├── file-excel-bi-cham.html
+    ├── loi-na-trong-excel.html
+    ├── loi-num-trong-excel.html
+    ├── loi-hash-trong-excel.html
+    ├── khong-keo-duoc-cong-thuc-trong-excel.html
+    ├── excel-khong-tu-cap-nhat-cong-thuc.html
+    ├── khong-mo-duoc-file-excel.html
+    ├── loi-font-chu-excel.html
+    ├── copy-paste-trong-excel-bi-loi.html
+    ├── khong-go-duoc-cong-thuc-trong-excel.html
+    ├── excel-hien-thi-cong-thuc-thay-vi-ket-qua.html
+    └── toi-uu-file-excel-nang.html
 ```
 (Các file thư viện React mặc định đã được dọn dẹp để đảm bảo 100% No-JS/Pure HTML).
 

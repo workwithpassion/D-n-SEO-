@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Excel không tự cập nhật công thức? Cách sửa lỗi Calculation nhanh
+    </title>
+    <meta
+      name="description"
+      content="Hàm Excel không tự nhảy kết quả khi thay đổi dữ liệu? Xem ngay cách chuyển chế độ tính toán từ Manual sang Automatic cực dễ."
+    />
+    <link
+      rel="canonical"
+      href="https://excelfixer.vercel.app/articles/excel-khong-tu-cap-nhat-cong-thuc/"
+    />
+
+    <meta
+      property="og:title"
+      content="Excel không tự cập nhật công thức? Cách sửa lỗi Calculation nhanh"
+    />
+    <meta
+      property="og:description"
+      content="Hướng dẫn khắc phục tình trạng Excel đứng im, không hiển thị kết quả mới khi thực hiện thay thế dữ liệu thành phần."
+    />
+    <meta
+      property="og:image"
+      content="https://excelfixer.vercel.app/images/excel-khong-cap-nhat.jpg"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://excelfixer.vercel.app/articles/excel-khong-tu-cap-nhat-cong-thuc/"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <meta
+      name="google-site-verification"
+      content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw"
+    />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7FL2LR414G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-7FL2LR414G");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Excel không tự cập nhật công thức? Cách sửa lỗi Calculation nhanh",
+        "description": "Excel không tự tính toán do đang ở chế độ Manual. Chuyển sang Automatic hoặc nhấn F9 để cập nhật.",
+        "image": "https://excelfixer.vercel.app/images/excel-khong-cap-nhat.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Excel Fixer"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Excel Fixer",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://excelfixer.vercel.app/logo.png"
+          }
+        },
+        "datePublished": "2026-03-01",
+        "dateModified": "2026-05-02",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://excelfixer.vercel.app/articles/excel-khong-tu-cap-nhat-cong-thuc/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="/" class="logo">Excel Fixer</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>
+          Excel không tự cập nhật công thức? Cách sửa lỗi Calculation nhanh
+        </h1>
+        <p>
+          Xử lý ngay tình trạng kết quả đóng băng sau khi thay đổi thông số nền.
+        </p>
+      </div>
+
+      <article>
+        <div class="breadcrumb">
+          <a href="/">Trang chủ</a> >
+          <a href="/articles/excel-khong-tu-cap-nhat-cong-thuc/"
+            >Lỗi Cập Nhật Công Thức</a
+          >
+        </div>
+
+        <p>
+          <strong>Tóm tắt nhanh:</strong> Tình trạng Excel không tự động tính
+          toán ra kết quả mới thường do phần mềm đang bị chuyển sang khóa ở chế
+          độ Manual. Chỉ cần chuyển nó trở lại Automatic là sẽ kích hoạt tính
+          toán trơn tru như cũ.
+        </p>
+
+        <h2>Hiện tượng lỗi Calculation này biểu hiện như thế nào?</h2>
+        <p>
+          Bạn có một bảng tổng hợp. Bạn sửa thông số của một tháng, lẽ ra dòng
+          Tổng cộng sẽ phải nhảy số mới thay đổi theo, thế nhưng:
+        </p>
+        <ul>
+          <li>Kết quả vẫn hoàn toàn không đổi, yên vị con số cũ.</li>
+          <li>
+            Hàm và công thức nhìn qua thì đúng, không có báo lỗi như
+            <a href="/articles/loi-name-trong-excel/">#NAME?</a> hay
+            <a href="/articles/loi-value-trong-excel/">#VALUE!</a>
+          </li>
+        </ul>
+        <p>
+          👉 Suy ra:
+          <strong>Đây hoàn toàn là lỗi do đóng băng chế độ tính toán.</strong>
+        </p>
+
+        <h2>Nguyên nhân duy nhất thường gặp</h2>
+        <p>
+          Nguyên nhân gốc rễ và phổ biến nhất là quá trình Calculation options
+          của Excel đang bị cấu hình thiết lập đặt ở tình trạng
+          <strong>Manual (Thủ công)</strong>.
+        </p>
+        <p>Khi ở trong chế độ Manual này:</p>
+        <ul>
+          <li>
+            Excel không tự động rà soát và tính toán lại sau mỗi phím bạn gõ.
+          </li>
+          <li>
+            Hệ thống đang chờ đợi xác nhận từ lệnh ép buộc (nhấn phím F9 trên
+            bàn phím). Khi đó toàn bộ quá trình mới tái khởi động một loạt.
+          </li>
+        </ul>
+        <p>
+          Điều này thường xảy ra khi bạn nhận một file mới tải từ trên mạng chứa
+          nhiều script macro, hoặc do phần mềm vô tình bị ghi đè cài đặt.
+        </p>
+
+        <h2>Cách sửa nhanh lỗi công thức không cập nhật</h2>
+
+        <h3>Cách 1: Chuyển hoàn toàn về Automatic</h3>
+        <p>
+          Bằng cách kích hoạt lại cơ chế mặc định ban đầu của Microsoft Excel,
+          mọi chuyện sẽ về đúng guồng quay của nó:
+        </p>
+        <ol>
+          <li>
+            Click lên dải điều hướng (Ribbon), chọn tab
+            <strong>Formulas</strong>.
+          </li>
+          <li>
+            Nhìn vào nhóm <em>Calculation</em> ở phần gốc bên phải, chọn mục con
+            <strong>Calculation Options</strong> có biểu tượng chiếc máy tính.
+          </li>
+          <li>
+            Một danh sách tùy chọn xổ xuống, click chuyển dấu tick từ ô
+            <em>Manual</em> qua <strong>Automatic</strong>.
+          </li>
+        </ol>
+        <p>
+          👉 Tính toán lại sẽ diễn ra vào khoảnh khắc ngay lập tức trong vài
+          giây ngắn ngủi sau cú click của bạn.
+        </p>
+
+        <h3>Cách 2: Nhấn trực tiếp phím F9 (Tính theo lô)</h3>
+        <p>
+          Trong trường hợp file của bạn dung lượng cỡ hàng GB vô cùng đồ sộ với
+          cả triệu hàm VLOOKUP giăng mắc đan xen màng nhện, bạn sẽ không muốn
+          chạy nền chế độ Automatic liên tục (làm treo máy). Khi đối mặt với
+          tình cảnh này, bạn được khuyên để Manual.
+        </p>
+        <p>
+          👉 <strong>Cách Update Data:</strong> Chỉ cần gõ toàn bộ khối lượng
+          các trường giá trị. Sau khi điền xong và nghỉ tay, bạn ấn nhanh nút
+          <code>F9</code> hoặc tổ hợp phím <code>Fn + F9</code>. Máy tính sẽ
+          đóng băng ít phút tiến hành rà soát hệ quy chiếu sửa lại toàn bộ dữ
+          liệu ra mới nhất.
+        </p>
+
+        <h3>Cách 3: Check lại định dạng tham số</h3>
+        <p>
+          Ngoài lỗi Manual System, một vài trường hợp thiểu số việc kết quả
+          không biến đổi cũng diễn ra khi công thức bạn tạo đang nhận format
+          dạng <em>Text</em> dẫn tới không được xử lý bằng chip mà coi như đó là
+          1 đoạn văn bản chữ thô sơ. Vui lòng đảm bảo
+          <a href="/articles/khong-go-duoc-cong-thuc-trong-excel/"
+            >hiện tượng này tránh khỏi</a
+          >
+          bằng cách dọn dẹp cell về format General.
+        </p>
+
+        <h2>Tình huống thực tiễn</h2>
+        <p>Bạn có một phép tính cơ sở:</p>
+        <pre><code>=A1+B1</code></pre>
+        <p>
+          A1 đang là số 5, B1 đang là số 10. Kết quả in số 15.<br />Bạn tiến
+          hành click sửa A1 thành số 50. Nhấn Enter và kết quả vẫn nằm im là số
+          15 chứ không phải 60 → Khi đó bạn xác định 100% bệnh của file Excel
+          của mình để lôi vào Calculation Options cài đặt.
+        </p>
+
+        <h2>Bài học rút ra tối ưu hóa</h2>
+        <ul>
+          <li>
+            <strong>Luôn để là Automatic</strong> trong hầu hết các công việc
+            nhân sự hay hạch toán kinh doanh bình thường hằng ngày.
+          </li>
+          <li>
+            <strong>Gấp đôi sức mạnh bằng Manual</strong> chỉ khi lượng Row/Cell
+            trong một file bị đội giá dung lượng file quá to làm máy bạn trở nên
+            thao tác rùa bò. Sử dụng F9 một cách chuyên nghiệp như chuyên gia dữ
+            liệu Big Data thực thụ!
+          </li>
+        </ul>
+
+        <div class="faq-section">
+          <h2>Cốt lõi vấn đề</h2>
+          <p>
+            Kết luận lại, đây là sự cố vô hại rất phổ biến nhưng lại cực kỳ đơn
+            giản dễ sửa chữa. Rất nhiều người từng hoang mang khi mới dùng gặp
+            phải. Tuy nhiên bạn chỉ cần linh động nhảy số chuyển lại chế độ tính
+            toán là hệ thống lại ngon trở lại.
+          </p>
+        </div>
+
+        <div class="related-articles">
+          <h3>Các vấn đề báo lỗi phổ biến khác có thể bạn quan tâm:</h3>
+          <ul>
+            <li>
+              <a href="/articles/file-excel-bi-cham/"
+                >Hướng dẫn 3 cách làm giảm bớt sức đè của việc chạy file nặng</a
+              >
+            </li>
+            <li>
+              <a href="/articles/toi-uu-file-excel-nang/"
+                >Hiểu sâu hơn về tối ưu hoá tốc độ khi hoạt động trên file
+                lớn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">
+        &copy; 2026 Excel Fixer | Semantic HTML5 | Technical Guidelines
+      </div>
+      <div style="display: flex; gap: 1.5rem">
+        <div style="display: flex; align-items: center; gap: 0.5rem">
+          <div
+            style="
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #22c55e;
+            "
+          ></div>
+          <a
+            href="/sitemap.xml"
+            style="
+              font-size: 0.65rem;
+              font-weight: 700;
+              text-transform: uppercase;
+            "
+            >Sitemap.xml</a
+          >
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem">
+          <div
+            style="
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #22c55e;
+            "
+          ></div>
+          <a
+            href="/robots.txt"
+            style="
+              font-size: 0.65rem;
+              font-weight: 700;
+              text-transform: uppercase;
+            "
+            >Robots.txt</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

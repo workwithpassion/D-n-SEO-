@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lỗi font chữ Excel bị vỡ? Cách sửa nhanh và triệt để</title>
+    <meta
+      name="description"
+      content="Gặp tình trạng lỗi font chữ trong Excel khi copy từ máy khác? Hướng dẫn cách đổi sang Unicode và cài font VNI, TCVN3 đơn giản."
+    />
+    <link
+      rel="canonical"
+      href="https://excelfixer.vercel.app/articles/loi-font-chu-excel/"
+    />
+
+    <meta
+      property="og:title"
+      content="Lỗi font chữ Excel bị vỡ? Cách sửa nhanh và triệt để"
+    />
+    <meta
+      property="og:description"
+      content="Khắc phục tình trạng ô tính hiển thị các ký tự tượng hình vuông vỡ vụn khi di chuyển tài liệu qua lại."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://excelfixer.vercel.app/articles/loi-font-chu-excel/"
+    />
+    <meta
+      property="og:image"
+      content="https://excelfixer.vercel.app/images/loi-font-excel.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <meta
+      name="google-site-verification"
+      content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7FL2LR414G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7FL2LR414G");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Lỗi font chữ Excel bị vỡ? Cách sửa nhanh và triệt để",
+        "description": "Font Excel bị lỗi do sai encoding hoặc thiếu font. Hướng dẫn chuyển sang Unicode và cài font VNI, TCVN3.",
+        "image": "https://excelfixer.vercel.app/images/loi-font-excel.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Excel Fixer"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Excel Fixer",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://excelfixer.vercel.app/logo.png"
+          }
+        },
+        "datePublished": "2024-03-01",
+        "dateModified": "2026-05-02",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://excelfixer.vercel.app/articles/loi-font-chu-excel/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="/" class="logo">Excel Fixer</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>Lỗi font chữ Excel bị vỡ? Cách sửa nhanh và triệt để</h1>
+        <p>
+          Trả lại khả năng đọc hiểu chữ tiếng Việt chuẩn cho mọi văn bản mà bạn
+          nhận được.
+        </p>
+      </div>
+
+      <article>
+        <div class="breadcrumb">
+          <a href="/">Trang chủ</a> >
+          <a href="/articles/loi-font-chu-excel/">Lỗi Font Chữ</a>
+        </div>
+
+        <p>
+          <strong>Tóm tắt nhanh:</strong> Lỗi font trong Excel thường xảy ra khi
+          file dùng bảng mã cũ (VNI, TCVN3) hoặc máy bạn không có font tương
+          ứng. Cách xử lý nhanh nhất là chuyển về Unicode hoặc cài đúng font
+          thiếu.
+        </p>
+
+        <h2>Vì sao Excel bị lỗi font chữ?</h2>
+        <p>
+          Bạn mở file Excel ra và thấy toàn ký tự lạ như ô vuông, dấu hỏi hoặc
+          chữ bị méo hoàn toàn? Đây là lỗi rất phổ biến khi làm việc với file từ
+          máy khác.
+        </p>
+        <p>
+          Nguyên nhân chính không phải do Excel “lỗi”, mà là do sự không tương
+          thích giữa bảng mã và font chữ.
+        </p>
+
+        <h2>Nguyên nhân phổ biến</h2>
+        <ul>
+          <li>
+            <strong>Khác bảng mã:</strong> File dùng bảng mã cũ như VNI hoặc
+            TCVN3 nhưng máy bạn đang dùng Unicode.
+          </li>
+          <li>
+            <strong>Thiếu font:</strong> Máy người gửi có font (ví dụ .VnTime),
+            nhưng máy bạn không có nên Excel tự thay thế font → gây lỗi hiển
+            thị.
+          </li>
+          <li>
+            <strong>Copy từ nguồn ngoài:</strong> Copy dữ liệu từ web hoặc phần
+            mềm khác nhưng sai bảng mã.
+          </li>
+        </ul>
+
+        <h2>Cách sửa lỗi font trong Excel</h2>
+
+        <h3>Cách 1: Chuyển về Unicode bằng Unikey (khuyên dùng)</h3>
+        <p>Đây là cách nhanh và sạch nhất để xử lý triệt để lỗi font.</p>
+        <ol>
+          <li>
+            Copy toàn bộ nội dung bị lỗi trong Excel (<code>Ctrl + C</code>).
+          </li>
+          <li>Mở Unikey Toolkit bằng tổ hợp <code>Ctrl + Shift + F6</code>.</li>
+          <li>
+            Chọn đúng bảng mã:
+            <ul>
+              <li>
+                <strong>Source:</strong> VNI Windows hoặc TCVN3 (tùy dữ liệu)
+              </li>
+              <li><strong>Destination:</strong> Unicode</li>
+            </ul>
+          </li>
+          <li>Nhấn <strong>Chuyển mã</strong>.</li>
+          <li>Quay lại Excel và dán (<code>Ctrl + V</code>).</li>
+        </ol>
+        <p>
+          Sau bước này, dữ liệu sẽ hiển thị bình thường với các font phổ biến
+          như Arial hoặc Calibri.
+        </p>
+
+        <h3>Cách 2: Cài thêm font còn thiếu</h3>
+        <p>
+          Nếu file bắt buộc phải giữ nguyên định dạng (ví dụ tài liệu hành
+          chính), bạn cần cài đúng font gốc.
+        </p>
+        <ul>
+          <li>Tải bộ font VNI / TCVN3 từ internet</li>
+          <li>Giải nén file</li>
+          <li>
+            Chọn toàn bộ file <code>.ttf</code> → chuột phải →
+            <strong>Install</strong>
+          </li>
+          <li>Mở lại Excel</li>
+        </ul>
+
+        <h3>Cách 3: Kiểm tra lại khi copy dữ liệu</h3>
+        <p>Khi copy từ web hoặc nguồn ngoài:</p>
+        <ul>
+          <li>Đảm bảo Unikey đang để bảng mã Unicode</li>
+          <li>Tránh copy trực tiếp từ nguồn không rõ encoding</li>
+        </ul>
+
+        <h2>Kết luận</h2>
+        <p>
+          Lỗi font Excel không phải vấn đề nghiêm trọng. Chỉ cần xác định đúng
+          nguyên nhân:
+        </p>
+        <ul>
+          <li>Sai bảng mã → chuyển Unicode</li>
+          <li>Thiếu font → cài thêm font</li>
+        </ul>
+        <p>Là bạn có thể xử lý gần như 100% trường hợp mà không mất dữ liệu.</p>
+
+        <div class="related-articles">
+          <h3>Bài viết liên quan:</h3>
+          <ul>
+            <li>
+              <a href="/articles/copy-paste-trong-excel-bi-loi/">
+                Lỗi copy paste trong Excel và cách xử lý
+              </a>
+            </li>
+            <li>
+              <a href="/articles/khong-go-duoc-cong-thuc-trong-excel/">
+                Không gõ được công thức trong Excel
+              </a>
+            </li>
+            <li>
+              <a href="/articles/excel-hien-thi-cong-thuc-thay-vi-ket-qua/">
+                Excel hiển thị công thức thay vì kết quả
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">
+        &copy; 2026 Excel Fixer. Nơi cung cấp giải pháp Excel hàng đầu.
+      </div>
+      <div style="display: flex; gap: 1.5rem">
+        <div style="display: flex; align-items: center; gap: 0.5rem">
+          <div
+            style="
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #22c55e;
+            "
+          ></div>
+          <a
+            href="/sitemap.xml"
+            style="
+              font-size: 0.65rem;
+              font-weight: 700;
+              text-transform: uppercase;
+            "
+            >Sitemap.xml</a
+          >
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem">
+          <div
+            style="
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #22c55e;
+            "
+          ></div>
+          <a
+            href="/robots.txt"
+            style="
+              font-size: 0.65rem;
+              font-weight: 700;
+              text-transform: uppercase;
+            "
+            >Robots.txt</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

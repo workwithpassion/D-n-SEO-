@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cách tối ưu file Excel bị nặng và chạy chậm hiệu quả 2026</title>
+    <meta
+      name="description"
+      content="File Excel chậm thường do dữ liệu lớn hoặc công thức phức tạp. Bạn có thể tối ưu bằng cách giảm công thức và xóa dữ liệu thừa."
+    />
+    <link
+      rel="canonical"
+      href="https://excelfixer.vercel.app/articles/toi-uu-file-excel-nang/"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Cách tối ưu file Excel bị nặng và chạy chậm hiệu quả 2026"
+    />
+    <meta
+      property="og:description"
+      content="File Excel chậm thường do dữ liệu lớn hoặc công thức phức tạp. Hướng dẫn tối ưu nhanh, giảm lag ngay lập tức."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://excelfixer.vercel.app/articles/toi-uu-file-excel-nang/"
+    />
+    <meta
+      property="og:image"
+      content="https://excelfixer.vercel.app/images/toi-uu-excel.jpg"
+    />
+    <meta
+      name="google-site-verification"
+      content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7FL2LR414G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7FL2LR414G");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Cách tối ưu file Excel bị nặng và chạy chậm hiệu quả 2026",
+        "description": "File Excel chậm thường do dữ liệu lớn hoặc công thức phức tạp...",
+        "image": "https://excelfixer.vercel.app/images/toi-uu-excel.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Excel Fixer"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Excel Fixer"
+        },
+        "datePublished": "2024-03-01",
+        "dateModified": "2026-05-02",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://excelfixer.vercel.app/articles/toi-uu-file-excel-nang/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container"><a href="/" class="logo">Excel Fixer</a></div>
+    </header>
+    <main>
+      <div class="hero">
+        <h1>Cách tối ưu file Excel bị nặng và chạy chậm</h1>
+        <p>
+          Tiết kiệm hàng giờ chạy vòng lặp Calculation với các bước giảm tải
+          file excel nặng hiệu quả.
+        </p>
+      </div>
+      <article>
+        <div class="breadcrumb">
+          <a href="/">Trang chủ</a> > Tối Ưu Hóa Excel
+        </div>
+        <p>
+          <strong>Tóm tắt nhanh:</strong> File Excel chậm do tệp dữ liệu phình
+          to hoặc chạy vòng lặp các hàm mảng. Lọc dữ liệu, lưu giá trị tĩnh, và
+          tối giản hoá là chìa khoá xoá bỏ hiện tượng giật lag.
+        </p>
+
+        <h2>Nguyên nhân khiến tệp phình to</h2>
+        <ul>
+          <li>
+            <strong>Quá nhiều công thức mảng:</strong> Đặc biệt là VLOOKUP đối
+            chiếu chéo sang Sheet ngoại bang tới chục nghìn dòng.
+          </li>
+          <li>
+            <strong>Dữ liệu rác:</strong> Định dạng màu nền tràn ngập ra ngoài
+            vùng báo cáo hàng triệu ô trống (Blank cell color format).
+          </li>
+          <li>
+            <strong>Ảnh nhúng độ phân giải cao:</strong> Chèn thẳng ảnh PNG chưa
+            giảm kích thước.
+          </li>
+        </ul>
+
+        <h2>Cách tối ưu hóa cho dân văn phòng</h2>
+        <h3>1. Đóng băng dữ liệu tham chiếu cũ</h3>
+        <p>
+          Thay vì để 12 tháng dữ liệu chạy lệnh tính toán, hãy bôi đen từ tháng
+          1 đến tháng 11, Copy và ấn <strong>Paste Value</strong> để đóng băng
+          nó thành số chết. Chỉ giữ lại tháng 12 chạy công thức.
+        </p>
+
+        <h3>2. Xóa dữ liệu vô hình thừa thãi</h3>
+        <p>
+          Chọn dòng cuối cùng có chứa dữ liệu thật sự, bôi đen kịch đến dòng đáy
+          của Excel (dòng thứ 1 triệu), nhấn chuột phải
+          <strong>Delete Entire Row</strong>. Làm tương tự với cột ngoài cùng lề
+          phải. Nhấn Save để tận hưởng file thu hẹp dung lượng.
+        </p>
+
+        <h3>3. Nén tệp hình thể và tách file</h3>
+        <p>
+          Data nếu chạm mốc 500,000 nghìn dòng thì việc chia file nhỏ theo Quý
+          hoặc Năm để thao tác sẽ nhẹ gánh cho RAM máy tính hơn. Excel lưu với
+          khung <code>.xlsb</code> (Binary Format) thay vì
+          <code>.xlsx</code> thông thường cũng giúp nén khối lượng nén dữ liệu
+          cực nhẹ cho file thuần Text.
+        </p>
+        <div class="related-articles">
+          <h3>Có thể bạn quan tâm:</h3>
+          <ul>
+            <li>
+              <a href="/articles/loi-name-trong-excel/"
+                >Sửa lỗi #NAME? do đánh máy sai tên hàm</a
+              >
+            </li>
+            <li>
+              <a href="/articles/loi-div-0-trong-excel/"
+                >Khắc phục lỗi #DIV/0! khi thực hiện chia</a
+              >
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

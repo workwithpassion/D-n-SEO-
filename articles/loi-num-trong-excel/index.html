@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lỗi #NUM! trong Excel là gì? Nguyên nhân và cách xử lý nhanh</title>
+    <meta
+      name="description"
+      content="Lỗi #NUM! xuất hiện khi công thức chứa giá trị số không hợp lệ. Bạn có thể sửa bằng cách kiểm tra lại công thức hoặc giới hạn giá trị đầu vào."
+    />
+    <link
+      rel="canonical"
+      href="https://excelfixer.vercel.app/articles/loi-num-trong-excel/"
+    />
+
+    <meta
+      property="og:title"
+      content="Lỗi #NUM! trong Excel là gì? Nguyên nhân và cách xử lý nhanh"
+    />
+    <meta
+      property="og:description"
+      content="Lỗi #NUM! xuất hiện khi công thức chứa giá trị số không hợp lệ. Hướng dẫn chi tiết cách sửa đổi nhanh chóng."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:image"
+      content="https://excelfixer.vercel.app/images/loi-num.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://excelfixer.vercel.app/articles/loi-num-trong-excel/"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <meta
+      name="google-site-verification"
+      content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7FL2LR414G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7FL2LR414G");
+    </script>
+    <!-- Schema Markup cho Article -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Lỗi #NUM! trong Excel là gì? Nguyên nhân và cách xử lý nhanh",
+        "description": "Lỗi #NUM! xuất hiện khi công thức chứa giá trị số không hợp lệ (quá lớn, sai logic…). Bạn có thể sửa bằng cách kiểm tra lại công thức hoặc giới hạn giá trị.",
+        "author": {
+          "@type": "Person",
+          "name": "Chuyên gia Excel"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Excel Fixer"
+        },
+        "image": "https://excelfixer.vercel.app/images/loi-num.jpg",
+        "datePublished": "2024-03-01",
+        "dateModified": "2026-05-02",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://excelfixer.vercel.app/articles/loi-num-trong-excel/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="/" class="logo">Excel Fixer</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>Lỗi #NUM! trong Excel là gì? Nguyên nhân và cách xử lý nhanh</h1>
+        <p>
+          Khắc phục lỗi định dạng số và giới hạn toán học gây ra lỗi #NUM! trong
+          tích tắc.
+        </p>
+      </div>
+
+      <article>
+        <div class="breadcrumb">
+          <a href="/">Trang chủ</a> >
+          <a href="/articles/loi-num-trong-excel/">Lỗi #NUM!</a>
+        </div>
+
+        <p>
+          <strong>Tóm tắt nhanh:</strong> Lỗi #NUM! xuất hiện khi công thức chứa
+          giá trị số không hợp lệ (quá lớn, sai logic…). Bạn có thể sửa bằng
+          cách kiểm tra lại công thức hoặc giới hạn giá trị đầu vào.
+        </p>
+
+        <h2>Lỗi #NUM! trong Excel là gì?</h2>
+        <p>
+          Nếu bạn từng thấy Excel trả về <strong>#NUM!</strong>, thì đó là lúc
+          chương trình đang “bó tay” với một phép tính không hợp lệ.
+        </p>
+        <p>
+          Khác với
+          <a href="/articles/loi-value-trong-excel/">#VALUE!</a> hay
+          <a href="/articles/loi-ref-trong-excel/">#REF!</a>, lỗi #NUM! liên
+          quan trực tiếp đến <strong>giá trị số</strong> — thường là:
+        </p>
+        <ul>
+          <li>Số quá lớn.</li>
+          <li>Số không hợp lệ.</li>
+          <li>Hoặc phép tính không thể thực hiện theo quy tắc toán học.</li>
+        </ul>
+
+        <h2>Khi nào lỗi #NUM! thường xảy ra?</h2>
+
+        <h3>1. Kết quả quá lớn hoặc quá nhỏ</h3>
+        <p>
+          Excel có giới hạn khả năng tính toán của nó ở mức cực đại/cực tiểu. Ví
+          dụ:
+        </p>
+        <pre><code>=10^1000</code></pre>
+        <p>👉 Excel không thể xử lý số quá lớn → trả về #NUM!</p>
+
+        <h3>2. Hàm tài chính nhập sai tham số</h3>
+        <p>
+          Các hàm như <code>RATE</code>, <code>IRR</code> rất dễ gây lỗi nếu:
+        </p>
+        <ul>
+          <li>Nhập sai dữ liệu đầu vào.</li>
+          <li>
+            Hoặc thuật toán không tìm được nghiệm phù hợp sau giới hạn vòng lặp.
+          </li>
+        </ul>
+
+        <h3>3. Căn bậc hai số âm</h3>
+        <pre><code>=SQRT(-1)</code></pre>
+        <p>
+          👉 Trong toán học thực, bạn không thể khai căn bậc hai của một số âm.
+          Do đó → phép tính không hợp lệ → #NUM!
+        </p>
+
+        <h3>4. Hàm lặp không hội tụ</h3>
+        <p>
+          Một số hàm cần “lặp để tìm kết quả”. Nếu vượt quá số lần lặp mà vẫn
+          không tính được chính xác kết quả → sinh ra lỗi.
+        </p>
+
+        <h2>Cách sửa lỗi #NUM! trong Excel</h2>
+
+        <h3>Cách 1: Kiểm tra lại dữ liệu đầu vào</h3>
+        <p>Đây là bước bạn nên làm đầu tiên, hãy tự đặt câu hỏi:</p>
+        <ul>
+          <li>
+            Có số âm không hợp lệ bị nhúng vào hàm không? (như SQRT, LOG).
+          </li>
+          <li>Có giá trị quá lớn không?</li>
+        </ul>
+
+        <h3>Cách 2: Giới hạn giá trị giới hạn</h3>
+        <p>Nếu bạn làm việc với số cực lớn, hãy thử:</p>
+        <ul>
+          <li>Chia nhỏ khối lượng dữ liệu.</li>
+          <li>Tính theo từng bước hoặc dùng logarit để giảm thiểu độ lớn.</li>
+        </ul>
+
+        <h3>Cách 3: Kiểm tra logic công thức</h3>
+        <p>
+          Đôi khi lỗi không nằm ở con số, mà ở cách bạn viết cấu trúc công thức.
+          Hãy review lại cấu trúc xem mình có bị sai ngoặc hoặc sai trình tự
+          toán tử không.
+        </p>
+
+        <h3>Cách 4: Dùng IFERROR để xử lý sạch đẹp</h3>
+        <p>Để ngăn chặn hiển thị #NUM!, làm sạch bảng báo cáo:</p>
+        <pre><code>=IFERROR(SQRT(A1), "")</code></pre>
+        <p>
+          👉 Phép toán này giúp file nhìn “sạch” hơn khi trình bày để không ai
+          bị rối mắt.
+        </p>
+
+        <h2>Ví dụ thực tế kinh điển</h2>
+        <p>Khi bạn gõ:</p>
+        <pre><code>=SQRT(-9)</code></pre>
+        <p>👉 <strong>Kết quả:</strong> <code>#NUM!</code></p>
+        <p>
+          <strong>Cách Sửa an toàn:</strong> Sử dụng hàm If lồng ghép để chặn
+          giá trị âm:
+        </p>
+        <pre><code>=IF(A1<0, "", SQRT(A1))</code></pre>
+        <p>👉 Tránh lỗi hoàn toàn vì lúc này lệnh tính toán được bỏ qua.</p>
+
+        <h2>Mẹo phòng tránh lỗi #NUM!</h2>
+        <ul>
+          <li>Không nhập số vượt ngoài phạm vi toán học của Excel.</li>
+          <li>
+            Kiểm tra dữ liệu lọc Validation trước khi tính các phép khai căn,
+            log.
+          </li>
+          <li>Tránh lạm dụng dùng hàm phức tạp khi không cần thiết.</li>
+        </ul>
+
+        <h2>Kết luận</h2>
+        <p>
+          Lỗi #NUM! không quá phổ biến nhưng lại khá “khó hiểu” với người mới
+          tiếp cận Excel. Chỉ cần nhớ định ranh: nó liên quan đến số không hợp
+          lệ, và thường có thể sửa ngay lập tức bằng cách kiểm tra lại tính
+          logic của dữ liệu.
+        </p>
+
+        <div class="related-articles">
+          <h3>Các bài viết liên quan:</h3>
+          <ul>
+            <li>
+              <a href="/articles/loi-na-trong-excel/"
+                >Lỗi #N/A (Not Available)</a
+              >
+            </li>
+            <li>
+              <a href="/articles/loi-value-trong-excel/"
+                >Cách sửa lỗi #VALUE! trong Excel</a
+              >
+            </li>
+            <li>
+              <a href="/articles/loi-div-0-trong-excel/"
+                >Giải pháp sửa lỗi #DIV/0!</a
+              >
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">
+        &copy; 2026 Excel Fixer | Semantic HTML5 | Technical Guidelines
+      </div>
+      <div style="display: flex; gap: 1.5rem">
+        <div style="display: flex; align-items: center; gap: 0.5rem">
+          <div
+            style="
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #22c55e;
+            "
+          ></div>
+          <a
+            href="/sitemap.xml"
+            style="
+              font-size: 0.65rem;
+              font-weight: 700;
+              text-transform: uppercase;
+            "
+            >Sitemap.xml</a
+          >
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem">
+          <div
+            style="
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #22c55e;
+            "
+          ></div>
+          <a
+            href="/robots.txt"
+            style="
+              font-size: 0.65rem;
+              font-weight: 700;
+              text-transform: uppercase;
+            "
+            >Robots.txt</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

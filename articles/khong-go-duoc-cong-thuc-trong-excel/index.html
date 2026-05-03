@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Không gõ được công thức trong Excel? Nguyên nhân và cách sửa</title>
+    <meta
+      name="description"
+      content="Tại sao Excel không nhận công thức mà chỉ hiện chữ? Hướng dẫn kiểm tra định dạng Text và dấu ' ẩn nhanh chóng."
+    />
+    <link
+      rel="canonical"
+      href="https://excelfixer.vercel.app/articles/khong-go-duoc-cong-thuc-trong-excel/"
+    />
+
+    <meta
+      property="og:title"
+      content="Không gõ được công thức trong Excel? Nguyên nhân và cách sửa"
+    />
+    <meta
+      property="og:description"
+      content="Excel chỉ hiện công thức mà không tính? Sửa nhanh lỗi định dạng Text và dấu ' trong vài giây."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://excelfixer.vercel.app/articles/khong-go-duoc-cong-thuc-trong-excel/"
+    />
+    <meta
+      property="og:image"
+      content="https://excelfixer.vercel.app/images/khong-go-cong-thuc.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <meta
+      name="google-site-verification"
+      content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw"
+    />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7FL2LR414G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-7FL2LR414G");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Không gõ được công thức trong Excel? Nguyên nhân và cách sửa",
+        "description": "Excel không nhận công thức do định dạng Text hoặc có dấu ' phía trước. Hướng dẫn sửa nhanh.",
+        "image": "https://excelfixer.vercel.app/images/khong-go-cong-thuc.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Excel Fixer"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Excel Fixer",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://excelfixer.vercel.app/logo.png"
+          }
+        },
+        "datePublished": "2024-03-01",
+        "dateModified": "2026-05-02",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://excelfixer.vercel.app/articles/khong-go-duoc-cong-thuc-trong-excel/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="/" class="logo">Excel Fixer</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>Không gõ được công thức trong Excel? Nguyên nhân và cách sửa</h1>
+        <p>
+          Trị dứt chứng bệnh biểu thức đóng băng hiển thị dãy hàm số mà chẳng
+          chịu báo ra kết quả nào.
+        </p>
+      </div>
+
+      <article>
+        <div class="breadcrumb">
+          <a href="/">Trang chủ</a> >
+          <a href="/articles/khong-go-duoc-cong-thuc-trong-excel/"
+            >Lỗi Không Gõ Được Công Thức</a
+          >
+        </div>
+
+        <p>
+          <strong>Tóm tắt nhanh:</strong> Excel không nhận công thức thường do ô
+          đang ở định dạng Text hoặc có dấu ' phía trước. Chuyển định dạng về
+          General hoặc xoá khoảng trắng là sẽ ổn.
+        </p>
+
+        <h2>Vì sao Excel chỉ hiện công thức mà không tính?</h2>
+        <p>
+          Bạn gõ <code>=SUM(A1:A5)</code> rồi ấn Enter hi vọng ra tổng. Nhưng
+          trên màn ảnh bảng biểu vẫn giương nguyên cái đoạn text mặt chữ mộc
+          <code>=SUM(A1:A5)</code> khô khan. Tại sao thế?
+        </p>
+
+        <h2>Nguyên nhân Excel không nhận công thức</h2>
+
+        <h3>1. Kẹt Format loại Text (Ngôn bản thô)</h3>
+        <p>
+          Ô hoặc cột đó đã bị Format thành định dạng "Text", nên hệ thống tự kỷ
+          coi nó như một chuỗi chữ cái vô hại mà bỏ qua bộ quy tắc thuật giải
+          logic.
+        </p>
+
+        <h3>2. Khởi tạo mào đầu bằng dấu phẩy móc (')</h3>
+        <p>
+          Dấu nháy đơn (') phía trước. Ví dụ <code>'=SUM...</code> sẽ bị hệ
+          thống xem là văn bản thay vì công thức.
+        </p>
+
+        <h2>Cách sửa lỗi Excel không tính công thức</h2>
+
+        <h3>Cách 1: Trở về tự nhiên Format General</h3>
+        <ol>
+          <li>Bôi đen vùng các ô lỗi.</li>
+          <li>
+            Trên dải Menu Ribbon (tab Home), mục Number Format chuyển dạng
+            <em>Text</em> về <strong>General</strong>.
+          </li>
+          <li>Sau đó click đúp vô ô rồi bấm Enter để Excel tính toán lại.</li>
+        </ol>
+
+        <h3>Cách 2: Quét nhổ dấu nháy ẩn (' Text modifier)</h3>
+        <p>
+          Click vào ô và xoá dấu nhẩy trên thanh Formula Bar. Nếu sửa hàng loạt,
+          dùng <em>Data > Text to Columns</em> ấn Finish luôn để dọn dẹp hàng
+          loạt.
+        </p>
+        <div class="related-articles">
+          <h3>Có thể bạn quan tâm:</h3>
+          <ul>
+            <li>
+              <a href="/articles/excel-hien-thi-cong-thuc-thay-vi-ket-qua/"
+                >Excel hiển thị công thức thay vì kết quả</a
+              >
+            </li>
+            <li>
+              <a href="/articles/excel-khong-tu-cap-nhat-cong-thuc/"
+                >Excel không tự cập nhật công thức</a
+              >
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">
+        &copy; 2026 Excel Fixer | Semantic HTML5 | Technical Guidelines
+      </div>
+    </footer>
+  </body>
+</html>

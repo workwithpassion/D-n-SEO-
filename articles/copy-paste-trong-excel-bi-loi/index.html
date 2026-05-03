@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy paste trong Excel bị lỗi định dạng? Cách xử lý đúng</title>
+    <meta name="description" content="Copy paste dữ liệu mất Format, bị lỗi hiển thị? Học ngay cách dùng Paste Special để giữ nguyên khoảng cách và định dạng dòng.">
+    <link rel="canonical" href="https://excelfixer.vercel.app/articles/copy-paste-trong-excel-bi-loi/">
+    
+    <meta property="og:title" content="Copy paste trong Excel bị lỗi định dạng? Cách xử lý đúng">
+    <meta property="og:description" content="Tiết kiệm hàng giờ đồng hồ mệt nhọc tinh chỉnh lại cột bảng biểu chắp vá do copy paste bằng các lệnh thủ công tối ưu thông minh.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://excelfixer.vercel.app/articles/copy-paste-trong-excel-bi-loi/">
+    
+    <meta name="google-site-verification" content="OVsJrKhb6FKpu-LdjxnDrcR47mr_O56r8LhCR1ivuuw" />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FL2LR414G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7FL2LR414G');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Copy paste trong Excel bị lỗi định dạng? Cách xử lý đúng",
+      "description": "Copy paste mất format là do bạn dùng paste mặc định. Hãy dùng Paste Special để giữ định dạng nguyên gốc.",
+      "image": "https://excelfixer.vercel.app/images/copy-paste-excel.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Excel Fixer"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Excel Fixer",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://excelfixer.vercel.app/logo.png"
+        }
+      },
+      "datePublished": "2026-03-01",
+      "dateModified": "2026-05-02",
+      "mainEntityOfPage": "https://excelfixer.vercel.app/articles/copy-paste-trong-excel-bi-loi/"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="/" class="logo">Excel Fixer</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Copy paste trong Excel bị lỗi định dạng? Cách xử lý đúng</h1>
+            <p>Tránh tình trạng đánh sập báo cáo đẹp đẽ bằng cách thao tác kĩ thuật làm chủ hộp thoại Paste Special ưu việt.</p>
+        </div>
+
+        <article>
+            <div class="breadcrumb">
+                <a href="/">Trang chủ</a> > <a href="/articles/copy-paste-trong-excel-bi-loi/">Lỗi Copy Paste</a>
+            </div>
+
+            <p><strong>Tóm tắt trọng tâm:</strong> Tình trạng copy paste văng mất format hiển thị, mất tô màu viền hay hỏng luôn tỷ lệ chiều cột là do bạn dùng tổ hợp phím paste vạn năng mặc định. Hãy luyện dùng công cụ phím Paste Special để kiểm soát cặn kẽ những gì bạn đang trút xuống bảng tính.</p>
+
+            <h2>Tại sao thao tác gắn Paste lại phá hoại hình mẫu?</h2>
+            <p>Dán dữ liệu <code>Ctrl + V</code> mặc định của máy tính từ xưa đến nay hoạt động theo phương thức "Copy gì cũng bê theo hết toàn bộ". Khi bê toàn bộ:</p>
+            <ul>
+                <li><strong>Paste kéo theo các viền nền thừa thãi:</strong> Ô copy bị tô màu đỏ, viền dày cộp. Khi dán đè nó bóp vỡ cái nền báo cáo nền xanh đẹp của bạn.</li>
+                <li><strong>Copy nguồn từ thế giới web hoang dã:</strong> Bôi đoạn văn bản trên trang Wiki vào file Excel. Tính năng báo sẽ tha lôi theo cả Hyperlink xanh, Font web dị hợm và code rác đẩy lệch lổn nhổn mọi ô tính hàng ngang.</li>
+                <li><strong>Paste nhảy cả công thức tham chiếu hỏng:</strong> Ô A chứa tính toán bằng cột C, bạn copy ném qua Sheet số 2 chả có vùng C → in ra bị mắc bệnh nguyền rủa như <a href="/articles/loi-ref-trong-excel/">#REF!</a> hoặc số liệu loạn cào cào.</li>
+            </ul>
+
+            <h2>Tuyển tập mẹo sửa lỗi thao tác Paste</h2>
+            
+            <h3>Cách cứu cánh 1: Truy xuất lệnh quyền năng Paste Special</h3>
+            <p>Việc Paste Đặc Biệt (Paste Special) sẽ giúp bạn chỉ lọc lấy đúng cái "Linh hồn" mong muốn chứ không nhận cả thân xác dị tuế:</p>
+            <ol>
+                <li>Tiến hành copy dữ liệu nguồn <code>Ctrl + C</code> như thao tác thói quen vốn có hằng ngày.</li>
+                <li>Click chuột cắm vùng tại đích đến trong bảng Excel.</li>
+                <li>Thay vì ấn rẹt Ctrl + V, khoan vội! Hãy khéo léo dùng tổ hợp phím tay <strong>Ctrl + Alt + V</strong> hoặc (Nhấp phải chuột -> tìm tính năng menu Paste Special...).</li>
+                <li>Hộp tính năng bảng kê xổ ra các chức năng chắt lọc cốt lõi:
+                    <ul>
+                        <li><span class="highlight">Values (Chuyển dán giá trị thuần):</span> CHỈ lấy trần xì đúng kết quả số liệu/chữ cái dội xuống (Sạch sẽ giũ bỏ mọi border viền, gỡ cả hyperlink lẫn công thức). Là cách yêu thích an toàn nhất khi dọn data.</li>
+                        <li><span class="highlight">Formats (Thuần sao chép làm màu định dạng):</span> Lấy đúng bản màu cọ vẽ viền nét, không lấy nội dung chữ. Dùng để làm đồng nhất các khung Dashboard chớp nhoáng.</li>
+                        <li><span class="highlight">Keep Source Formatting:</span> Cố chấp bê nguyên trạng thiết kế giữ trọn vẻ đẹp bảng vẽ cũ không đâm đè theo Theme mới ở phía điểm tiếp nhận.</li>
+                    </ul>
+                </li>
+                <li>Xoay chọn nhánh tương đối theo ý đồ công việc và ấn OK!</li>
+            </ol>
+
+            <h3>Cách cứu cánh 2: Tính năng nhồi Paste giữ nguyên độ rộng Cột (Keep Column Widths)</h3>
+            <p>Một điểm siêu tức tối kinh điển: Bạn lập một cái Sheet báo cáo có cột ghi chú kích cỡ rất to để nhìn, cột số thứ tự bo hẹp bé tí tẹo (20px). Khi bôi copy qua Sheet mới thì ui chao ơi, nó lại căng phồng thành cục mập 64px tiêu chuẩn như cũ, phải bò kéo mép chỉnh ra lại đau cả mắt.</p>
+            <p>👉 <strong>Sửa chữa:</strong> Tại ngay vùng Paste, xổ chuột thả rơi vào biểu tượng biểu lệnh thả nổi nhỏ tí hon hiện ra ở góc, đánh tick chọn ngay dòng biểu tượng <em>Keep Source Column Widths (W)</em>. Hình hài tỉ lệ cũ kĩ sẽ tái hiện lại sống động không sai nửa một mili nào.</p>
+
+            <h3>Cách cứu cánh 3: Copy từ trên Web nhưng không dính rác mã HTML</h3>
+            <p>Đừng vội dán bằng lệnh thường, click chuột phải chọn Paste theo biểu tượng <strong>Match Destination Formatting</strong> (Dán bắt buộc phải tuân theo luồng Format tại điểm hiện tại). Mọi Hyperlink lộn xộn bám dính theo các phông màu nhảm nhí ngoài Web sẽ bị phần mềm tạc bỏ, Excel chỉ in chuỗi font chữ đúng mực Arial kích thước chuẩn cỡ số 11 vào bảng.</p>
+
+            <div class="faq-section">
+                <h2>Cốt lõi vấn đề</h2>
+                <p>Nằm thuộc Paste đúng kỹ thuật giúp bạn bảo tồn sự thanh tao chuyên nghiệp trong mắt đối tác và tự tiết kiệm hàng vạn giờ đồng hồ mệt nhọc cặm cụi tô lại viền khung bảng bị phá hỏng.</p>
+            </div>
+            
+            <div class="related-articles">
+                <h3>Các cách khắc phục thông báo liên hoàn:</h3>
+                <ul>
+                    <li><a href="/articles/loi-font-chu-excel/">Giải phẫu vỡ Font méo chữ khi di chuyển tài liệu</a></li>
+                    <li><a href="/articles/excel-hien-thi-cong-thuc-thay-vi-ket-qua/">Trị liệu khi Copy bảng lại ra đoạn chữ code công thức mà không ra giá trị</a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">
+            &copy; 2026 Excel Fixer | Semantic HTML5 | Technical Guidelines
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #22c55e;"></div>
+                <a href="/sitemap.xml" style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase;">Sitemap.xml</a>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #22c55e;"></div>
+                <a href="/robots.txt" style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase;">Robots.txt</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

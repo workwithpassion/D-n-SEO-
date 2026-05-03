@@ -1,38 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yourdomain.com/</loc>
-    <lastmod>2024-03-01</lastmod>
+    <loc>https://excelfixer.vercel.app/</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/articles/loi-value-trong-excel.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <loc>https://excelfixer.vercel.app/articles/loi-value-trong-excel/</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/articles/loi-ref-trong-excel.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <loc>https://excelfixer.vercel.app/articles/loi-ref-trong-excel/</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/articles/loi-name-trong-excel.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <loc>https://excelfixer.vercel.app/articles/loi-name-trong-excel/</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/articles/loi-div-0-trong-excel.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <loc>https://excelfixer.vercel.app/articles/loi-div-0-trong-excel/</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/articles/file-excel-bi-cham.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <loc>https://excelfixer.vercel.app/articles/file-excel-bi-cham/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://excelfixer.vercel.app/articles/loi-na-trong-excel/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://excelfixer.vercel.app/articles/loi-num-trong-excel/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://excelfixer.vercel.app/articles/loi-hash-trong-excel/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://excelfixer.vercel.app/articles/khong-keo-duoc-cong-thuc-trong-excel/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://excelfixer.vercel.app/articles/excel-khong-tu-cap-nhat-cong-thuc/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://excelfixer.vercel.app/articles/khong-mo-duoc-file-excel/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://excelfixer.vercel.app/articles/loi-font-chu-excel/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://excelfixer.vercel.app/articles/copy-paste-trong-excel-bi-loi/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://excelfixer.vercel.app/articles/khong-go-duoc-cong-thuc-trong-excel/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://excelfixer.vercel.app/articles/excel-hien-thi-cong-thuc-thay-vi-ket-qua/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://excelfixer.vercel.app/articles/toi-uu-file-excel-nang/</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
