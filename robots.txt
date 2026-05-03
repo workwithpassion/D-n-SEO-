@@ -3,5 +3,5 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://excelfixer.vercel.app//sitemap.xml
+Sitemap: https://excelfixer.vercel.app/sitemap.xml
 Crawl-delay: 1
